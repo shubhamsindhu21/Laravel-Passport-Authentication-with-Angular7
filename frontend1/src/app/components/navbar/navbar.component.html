@@ -1,0 +1,11 @@
+<nav id="a"  class="navbar navbar-light">
+
+  <img width="110" height="45" class="site-logo" src="http://theurbancollective.io/wp-content/uploads/2017/03/Logo@3x.png" alt="The Urban Collective">
+  <div>
+    <a class="navbar-brand" routerLink="login" *ngIf="!loggedIn">Login</a>
+    <a class="navbar-brand" href="#" (click)="logout($event)" *ngIf="loggedIn">Logout</a>
+    <a class="navbar-brand" routerLink="profile" *ngIf="loggedIn">Profile</a>
+  </div>
+
+
+</nav>
